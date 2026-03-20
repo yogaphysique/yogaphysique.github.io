@@ -22,7 +22,8 @@ body {
   display: flex;
   gap: 20px;
   padding: 40px;
-  overflow-x: auto;
+  overflow: hidden; /* hides scroll bar */
+  animation: scroll-left 25s linear infinite;
 }
 
 .review {
@@ -66,6 +67,16 @@ body {
 .name {
   font-weight: bold;
   margin-bottom: 8px;
+}
+
+/* ANIMATION */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* MOBILE */
