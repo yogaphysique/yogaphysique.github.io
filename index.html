@@ -5,181 +5,159 @@
   <title>yogaphysique</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- FAVICON -->
+  <!-- favicon -->
   <link rel="icon" type="image/png" href="plus.png">
 
   <style>
-    body, html {
+    /* RESET */
+    * {
       margin: 0;
       padding: 0;
-      height: 100%;
-      background: black;
-      font-family: Arial, sans-serif;
+      box-sizing: border-box;
     }
 
+    body {
+      font-family: Arial, sans-serif;
+      background: black;
+    }
+
+    /* HERO VIDEO */
     .hero {
       position: relative;
-      height: 100vh;
       width: 100%;
+      height: 100svh;
       overflow: hidden;
     }
 
     .hero video {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 50%;
+      left: 50%;
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transform: translate(-50%, -50%);
     }
 
     /* REVIEWS SECTION */
     .reviews {
       background: #f5f5f5;
-      padding: 80px 20px;
-    }
-
-    .reviews h2 {
-      text-align: center;
-      font-size: 28px;
-      margin-bottom: 40px;
+      padding: 60px 20px;
     }
 
     .reviews-container {
       display: flex;
       gap: 20px;
       overflow-x: auto;
-      padding-bottom: 10px;
+      scroll-snap-type: x mandatory;
     }
 
     .review-card {
-      min-width: 300px;
-      max-width: 300px;
+      flex: 0 0 300px;
       background: white;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      flex-shrink: 0;
+      border-radius: 10px;
+      scroll-snap-align: start;
     }
 
     .stars {
       color: #fbbc04;
       margin-bottom: 10px;
-    }
-
-    .review-text {
-      font-size: 14px;
-      line-height: 1.5;
-      margin-bottom: 10px;
+      font-size: 18px;
     }
 
     .review-name {
       font-weight: bold;
-      font-size: 13px;
+      margin-bottom: 10px;
     }
+
+    .review-text {
+      font-size: 14px;
+      line-height: 1.4;
+      color: #333;
+    }
+
+    /* MOBILE IMPROVEMENTS */
+    @media (max-width: 768px) {
+      .review-card {
+        flex: 0 0 85%;
+      }
+    }
+
   </style>
 </head>
 
 <body>
 
+  <!-- HERO -->
   <div class="hero">
     <video autoplay muted playsinline poster="finalframe.jpg">
       <source src="website landing.mp4" type="video/mp4">
     </video>
   </div>
 
+  <!-- REVIEWS -->
   <section class="reviews">
-    <h2>Reviews</h2>
-
     <div class="reviews-container">
 
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <div class="review-text">I have been training with yogaphysique for 10 years. One of fulfillment, good energy and friendship. Highly recommend.</div>
-        <div class="review-name">Adam V</div>
+        <div class="review-name">Rose Domaong</div>
+        <div class="review-text">
+          It was a wonderful experience going to his classes. I am going to continue attending as he introduces new poses each session… beneficial to the body. Thank you Anthony.
+        </div>
       </div>
 
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <div class="review-text">Anthony is passionate, welcoming, and impactful. Classes are fun and effective. 100% recommend.</div>
         <div class="review-name">Star Love Universe</div>
+        <div class="review-text">
+          Anthony is super passionate about his mission of practicing & teaching yoga. His classes are fun, connecting, effective and impactful. Highly recommend.
+        </div>
       </div>
 
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <div class="review-text">I came to yoga with joint pain and found real relief, improved mobility, and confidence. Supportive and safe environment.</div>
         <div class="review-name">Sylvia Cigna</div>
+        <div class="review-text">
+          I am incredibly grateful for my yoga teacher Anthony. His knowledge, patience and genuine care made a huge difference in my life.
+        </div>
       </div>
 
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <div class="review-text">Capable and knowledgeable instructor. Easy going, well-paced classes with strong fundamentals.</div>
-        <div class="review-name">Daniela Scarcello</div>
+        <div class="review-name">Adam V</div>
+        <div class="review-text">
+          I have been training with yogaphysique for 10 years. This journey has been one of fulfillment, good energy and friendship. Highly recommended.
+        </div>
       </div>
 
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <div class="review-text">I feel my flexibility improving each week and feel relaxed afterwards. Great experience.</div>
-        <div class="review-name">Tessa Shelvey</div>
+        <div class="review-name">Adriana Sforza</div>
+        <div class="review-text">
+          Anthony is really wonderful. He’s very patient and attentive. I very much enjoy attending his yoga classes.
+        </div>
       </div>
 
       <div class="review-card">
         <div class="stars">★★★★★</div>
-        <div class="review-text">Great sessions.</div>
-        <div class="review-name">dannids kurasz</div>
-      </div>
-
-      <div class="review-card">
-        <div class="stars">★★★★★</div>
-        <div class="review-text">Yoga feels intentional and accessible. I leave each class stronger and more balanced.</div>
         <div class="review-name">Zlata M</div>
+        <div class="review-text">
+          Anthony creates a space where yoga feels intentional and accessible. Every class leaves me feeling stronger and more balanced.
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="review-name">Tessa Shelvey</div>
+        <div class="review-text">
+          I really enjoyed the yoga class. I can feel my flexibility improving each week and feel relaxed and calmer afterwards.
+        </div>
       </div>
 
     </div>
   </section>
-
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>yogaphysique</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-      background: black;
-    }
-
-    .hero {
-      position: relative;
-      height: 100vh;
-      width: 100%;
-      overflow: hidden;
-    }
-
-    .hero video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="hero">
-    <video autoplay muted playsinline poster="finalframe.jpg">
-      <source src="website landing.mp4" type="video/mp4">
-    </video>
-  </div>
 
 </body>
 </html>
