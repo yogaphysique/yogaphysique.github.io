@@ -76,18 +76,24 @@ body {
 
 .logos-track {
   display: flex;
-  gap: 60px;
   width: max-content;
   animation: scroll 25s linear infinite;
 }
 
-.logos img {
+.logo-set {
+  display: flex;
+  gap: 60px;
+  padding-right: 60px;
+}
+
+.logo-set img {
   height: 60px;
   width: auto;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
-/* animation */
+/* PERFECT LOOP */
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -117,7 +123,7 @@ body {
     flex: 0 0 85%;
   }
 
-  .logos img {
+  .logo-set img {
     height: 45px;
   }
 }
