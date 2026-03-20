@@ -33,7 +33,6 @@ body {
   cursor: pointer;
 }
 
-/* fixed height + truncation */
 .text {
   line-height: 1.5;
   max-height: 120px;
@@ -68,6 +67,36 @@ body {
   margin-bottom: 8px;
 }
 
+/* LOGOS */
+.logos {
+  overflow: hidden;
+  padding: 40px 0;
+  background: white;
+}
+
+.logos-track {
+  display: flex;
+  gap: 60px;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.logos img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
 
@@ -86,5 +115,9 @@ body {
 
   .review {
     flex: 0 0 85%;
+  }
+
+  .logos img {
+    height: 45px;
   }
 }
