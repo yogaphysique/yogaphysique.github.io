@@ -5,6 +5,147 @@
   <title>yogaphysique</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" href="plus.png">
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: black;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* REVIEWS SECTION */
+    .reviews {
+      background: #f5f5f5;
+      padding: 80px 20px;
+    }
+
+    .reviews h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 40px;
+    }
+
+    .reviews-container {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+
+    .review-card {
+      min-width: 300px;
+      max-width: 300px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+
+    .stars {
+      color: #fbbc04;
+      margin-bottom: 10px;
+    }
+
+    .review-text {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .review-name {
+      font-weight: bold;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="hero">
+    <video autoplay muted playsinline poster="finalframe.jpg">
+      <source src="website landing.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <section class="reviews">
+    <h2>Reviews</h2>
+
+    <div class="reviews-container">
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">I have been training with yogaphysique for 10 years. One of fulfillment, good energy and friendship. Highly recommend.</div>
+        <div class="review-name">Adam V</div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">Anthony is passionate, welcoming, and impactful. Classes are fun and effective. 100% recommend.</div>
+        <div class="review-name">Star Love Universe</div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">I came to yoga with joint pain and found real relief, improved mobility, and confidence. Supportive and safe environment.</div>
+        <div class="review-name">Sylvia Cigna</div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">Capable and knowledgeable instructor. Easy going, well-paced classes with strong fundamentals.</div>
+        <div class="review-name">Daniela Scarcello</div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">I feel my flexibility improving each week and feel relaxed afterwards. Great experience.</div>
+        <div class="review-name">Tessa Shelvey</div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">Great sessions.</div>
+        <div class="review-name">dannids kurasz</div>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <div class="review-text">Yoga feels intentional and accessible. I leave each class stronger and more balanced.</div>
+        <div class="review-name">Zlata M</div>
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>yogaphysique</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body, html {
       margin: 0;
