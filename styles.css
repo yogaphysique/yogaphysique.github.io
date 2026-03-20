@@ -128,10 +128,58 @@ body {
   font-size: 16px;
 }
 
+/* CTA */
+.cta {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cta h2 {
+  margin-bottom: 15px;
+}
+
+.cta p {
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #333;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background: #000;
+}
+
+.cta-email {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* SOCIAL ICONS */
+.socials {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials a {
+  display: inline-block;
+}
+
+.socials svg {
+  border-radius: 6px;
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
 
-  /* FIXED HERO (THIS IS THE IMPORTANT PART) */
   .hero {
     height: auto;
     background: none;
