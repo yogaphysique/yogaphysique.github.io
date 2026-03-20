@@ -3,113 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yoga Physique</title>
+  <title>yogaphysique</title>
 
   <!-- FAVICON -->
-  <link rel="icon" type="image/png" href="plus.png?v=3">
+  <link rel="icon" type="image/png" href="plus.png?v=4">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
-    /* HERO */
-    .hero {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    .hero video {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: auto;
-      height: 100%;
-      min-width: 100%;
-      min-height: 100%;
-      transform: translate(-50%, -50%);
-      object-fit: cover;
-    }
-
-    .hero-text {
-      position: absolute;
-      bottom: 10%;
-      left: 5%;
-      z-index: 2;
-    }
-
-    .hero-text h1 {
-      font-size: 6vw;
-      margin: 0;
-      line-height: 1.1;
-    }
-
-    /* REVIEWS */
-    .reviews {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
-      padding: 40px;
-      background: #f5f5f5;
-    }
-
-    .review {
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-    }
-
-    .stars {
-      color: #d4af37;
-      margin-bottom: 10px;
-    }
-
-    .name {
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-
-    /* MOBILE */
-    @media (max-width: 900px) {
-      .reviews {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .hero-text h1 {
-        font-size: 10vw;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .reviews {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        height: 80vh;
-      }
-
-      .hero-text h1 {
-        font-size: 12vw;
-      }
-    }
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- HERO -->
+  <!-- HERO (VIDEO ONLY — NO TEXT) -->
   <div class="hero">
     <video autoplay muted playsinline preload="auto">
       <source src="website landing.mp4" type="video/mp4">
     </video>
-
-    <div class="hero-text">
-      <h1>yoga +<br>physique</h1>
-    </div>
   </div>
 
   <!-- REVIEWS -->
@@ -118,43 +27,57 @@
     <div class="review">
       <div class="stars">★★★★★</div>
       <div class="name">Rose Domaong</div>
-      <div>It was a wonderful experience going to his classes. I am going to continue attending as he introduces new poses each session... beneficial to the body. Thank you Anthony.</div>
+      <div class="text">
+        It was a wonderful experience going to his classes. I am going to continue attending as he introduces new poses each session... beneficial to the body. Thank you Anthony.
+      </div>
     </div>
 
     <div class="review">
       <div class="stars">★★★★★</div>
       <div class="name">Star Love Universe</div>
-      <div>Anthony is super passionate about his mission of practicing & teaching yoga. His classes are fun, connecting, effective and impactful.</div>
+      <div class="text">
+        Anthony is super passionate about his mission of practicing & teaching yoga. His classes are fun, connecting, effective and impactful.
+      </div>
     </div>
 
     <div class="review">
       <div class="stars">★★★★★</div>
       <div class="name">Sylvia Cigna</div>
-      <div>I am incredibly grateful for my yoga teacher Anthony. His knowledge, patience and genuine care made a huge difference in my life.</div>
+      <div class="text">
+        I am incredibly grateful for my yoga teacher Anthony. His knowledge, patience and genuine care made a huge difference in my life.
+      </div>
     </div>
 
     <div class="review">
       <div class="stars">★★★★★</div>
       <div class="name">Adam V</div>
-      <div>I have been training with yogaphysique for 10 years. This journey has been one of fulfillment, good energy and friendship. Highly recommended.</div>
+      <div class="text">
+        I have been training with yogaphysique for 10 years. This journey has been one of fulfillment, good energy and friendship. Highly recommended.
+      </div>
     </div>
 
     <div class="review">
       <div class="stars">★★★★★</div>
       <div class="name">Adriana Sforza</div>
-      <div>Anthony is really wonderful. He’s very patient and attentive with the class. I very much enjoy attending his yoga classes.</div>
+      <div class="text">
+        Anthony is really wonderful. He’s very patient and attentive with the class. I very much enjoy attending his yoga classes.
+      </div>
     </div>
 
     <div class="review">
       <div class="stars">★★★★★</div>
       <div class="name">Zlata M</div>
-      <div>Anthony creates a space where yoga feels intentional and accessible. Every class leaves me feeling stronger and more balanced. Highly recommend.</div>
+      <div class="text">
+        Anthony creates a space where yoga feels intentional and accessible. Every class leaves me feeling stronger and more balanced. Highly recommend.
+      </div>
     </div>
 
     <div class="review">
       <div class="stars">★★★★★</div>
       <div class="name">Tessa Shelvey</div>
-      <div>I really enjoyed the yoga class. I can feel my flexibility improving each week and feel very relaxed and calmer afterwards.</div>
+      <div class="text">
+        I really enjoyed the yoga class. I can feel my flexibility improving each week and feel very relaxed and calmer afterwards.
+      </div>
     </div>
 
   </div>
