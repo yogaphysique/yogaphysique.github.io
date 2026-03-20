@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+/* REVIEWS (SCROLL) */
+.reviews {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 30px 20px;
+  background: #f5f5f5;
+}
+
+.review {
+  flex: 0 0 auto;
+  width: 280px;
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.stars {
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.text {
+  line-height: 1.4;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero {
+    height: 75vh;
+  }
+
+  .review {
+    width: 85vw;
+  }
+}
