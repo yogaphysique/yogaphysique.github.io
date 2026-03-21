@@ -138,7 +138,8 @@ body {
 }
 
 .cta-text {
-  font-family: "Eurostile", "Arial Black", sans-serif;
+  font-family: "Eurostile", "Bank Gothic", "Orbitron", sans-serif;
+  letter-spacing: 0.5px;
   margin-bottom: 25px;
 }
 
@@ -169,8 +170,9 @@ body {
 }
 
 .socials img {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
 }
 
 /* MOBILE */
