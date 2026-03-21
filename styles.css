@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* HERO (DESKTOP UNCHANGED) */
+/* HERO */
 .hero {
   width: 100%;
   height: 100vh;
@@ -89,8 +89,6 @@ body {
 .logo-set img {
   height: 60px;
   width: auto;
-  object-fit: contain;
-  flex-shrink: 0;
 }
 
 @keyframes scroll {
@@ -112,8 +110,6 @@ body {
 .video-wrapper iframe {
   width: 100%;
   height: 100%;
-  display: block;
-  border: none;
 }
 
 .youtube-button {
@@ -121,60 +117,65 @@ body {
   margin-top: 30px;
   background: #FF0000;
   color: white;
-  text-decoration: none;
   padding: 14px 24px;
   border-radius: 6px;
+  text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
 }
 
 /* CTA */
 .cta {
   padding: 40px 20px;
+}
+
+.cta-box {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #f5f5f5;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.cta-top {
   text-align: center;
+  margin-bottom: 25px;
 }
 
-.cta h2 {
-  margin-bottom: 15px;
-}
-
-.cta p {
+.cta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
 
+.cta-left {
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .cta-button {
-  display: inline-block;
   background: #333;
   color: white;
-  padding: 14px 24px;
+  padding: 12px 20px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
 }
 
-.cta-button:hover {
-  background: #000;
-}
-
 .cta-email {
-  margin-top: 15px;
-  font-size: 14px;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
-/* SOCIAL ICONS */
 .socials {
-  margin-top: 40px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 }
 
-.socials a {
-  display: inline-block;
-}
-
-.socials svg {
-  border-radius: 6px;
+.socials img {
+  width: 34px;
+  height: 34px;
 }
 
 /* MOBILE */
@@ -188,7 +189,6 @@ body {
   .hero video {
     width: 100%;
     height: auto;
-    display: block;
   }
 
   .reviews {
@@ -201,5 +201,10 @@ body {
 
   .logo-set img {
     height: 45px;
+  }
+
+  .cta-row {
+    flex-direction: column;
+    gap: 15px;
   }
 }
