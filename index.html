@@ -10,10 +10,24 @@
   <link rel="canonical" href="https://yogaphysique.github.io/">
 
   <link rel="icon" type="image/png" href="plus.png?v=11">
-  <link rel="stylesheet" href="styles.css?v=53">
+  <link rel="stylesheet" href="styles.css?v=54">
 </head>
 
 <body>
+
+  <!-- HAMBURGER -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="menu" id="menu">
+    <a href="#reviews">Reviews</a>
+    <a href="#collaborators">Collaborators</a>
+    <a href="#video">Video</a>
+    <a href="#contact">Contact</a>
+  </div>
 
   <!-- HERO -->
   <div class="hero">
@@ -23,7 +37,7 @@
   </div>
 
   <!-- REVIEWS -->
-  <div class="reviews">
+  <div class="reviews" id="reviews">
 
     <div class="review" onclick="this.classList.toggle('open')">
       <div class="stars">★★★★★</div>
@@ -84,7 +98,7 @@
   </div>
 
   <!-- LOGOS -->
-  <div class="logos">
+  <div class="logos" id="collaborators">
     <div class="logos-track">
 
       <div class="logo-set">
@@ -115,7 +129,7 @@
   </div>
 
   <!-- YOUTUBE -->
-  <div class="video-section">
+  <div class="video-section" id="video">
 
     <div class="video-wrapper">
       <iframe
@@ -132,7 +146,7 @@
   </div>
 
   <!-- CTA -->
-  <div class="cta">
+  <div class="cta" id="contact">
     <div class="cta-box">
 
       <div class="cta-text">
@@ -150,9 +164,8 @@
     </div>
   </div>
 
-  <!-- SOCIALS (SEPARATE SECTION) -->
+  <!-- SOCIALS -->
   <div class="social-section">
-
     <div class="socials">
       <a href="https://www.instagram.com/yogaphysique" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png">
@@ -166,8 +179,15 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_squircle_%282017%29.svg">
       </a>
     </div>
-
   </div>
+
+  <!-- JS -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
 
 </body>
 </html>
