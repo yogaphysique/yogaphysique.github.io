@@ -146,14 +146,12 @@ html {
 
 /* YOUTUBE */
 .video-section {
-  padding: 40px 20px; /* added side padding for alignment */
+  padding: 40px 0;
   text-align: center;
 }
 
 .video-wrapper {
   width: 100%;
-  max-width: 900px;   /* constrain width to match CTA */
-  margin: 0 auto;     /* center it */
   aspect-ratio: 16 / 9;
 }
 
@@ -175,7 +173,7 @@ html {
 
 /* CTA */
 .cta {
-  padding: 40px 0; /* removed horizontal padding */
+  padding: 40px 0;
 }
 
 .cta-box {
@@ -183,7 +181,7 @@ html {
   width: 100%;
   margin: 0 auto;
   background: #f5f5f5;
-  padding: 35px 20px; /* moved padding inside */
+  padding: 35px 20px;
   border-radius: 12px;
   text-align: center;
 }
@@ -208,7 +206,7 @@ html {
 
 .cta-email {
   font-size: 14px;
-  margin-top: 10px; /* increased spacing */
+  margin-top: 10px;
 }
 
 /* SOCIAL */
@@ -253,11 +251,7 @@ html {
     height: 45px;
   }
 
-  .video-section {
-    padding: 20px; /* keep consistent spacing on mobile */
-  }
-
   .cta-box {
-    padding: 25px 15px; /* tighter on mobile */
+    padding: 25px 15px;
   }
 }
