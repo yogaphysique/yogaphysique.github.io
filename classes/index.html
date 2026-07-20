@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
-    <title>Classes</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes</title>
+
+  <link rel="stylesheet" href="../styles.css">
+
+  <style>
+
+    body{
+      margin:0;
+      font-family:Arial,sans-serif;
+      background:white;
+    }
+
+    .back-button{
+      position:fixed;
+      top:20px;
+      left:20px;
+      z-index:1000;
+
+      background:#000;
+      color:#fff;
+      text-decoration:none;
+
+      padding:16px 24px;
+      border-radius:6px;
+
+      font-weight:bold;
+
+      transition:0.2s;
+    }
+
+    .back-button:hover{
+      background:#333;
+    }
+
+    .content{
+      max-width:1000px;
+      margin:120px auto;
+      padding:20px;
+    }
+
+  </style>
+
 </head>
 
 <body>
 
-    <h1>Classes</h1>
+<a href="../index.html" class="back-button">
+  ← Back to Home
+</a>
+
+<div class="content">
+
+  <h1>Classes</h1>
+
+</div>
 
 </body>
 </html>
