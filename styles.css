@@ -70,11 +70,46 @@ html {
 }
 
 
+/* REVIEWS SECTION */
+.reviews-section {
+  padding: 23px 0 5px;
+  background: #fff;
+}
+
+
+/* GOOGLE RATING */
+.google-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+  margin: 0 20px 15px;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.google-rating-star {
+  color: #fbbc04;
+  font-size: 39px;
+  line-height: 1;
+}
+
+.google-rating-text {
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #000;
+}
+
+
 /* REVIEWS */
 .reviews {
   display: flex;
   gap: 20px;
-  padding: 40px;
+
+  padding: 10px 40px 15px;
+
   overflow-x: auto;
 }
 
@@ -121,10 +156,60 @@ html {
 }
 
 
+/* GOOGLE REVIEWS LINK */
+.google-reviews-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+
+  gap: 9px;
+  margin: 13px auto 5px;
+
+  color: #000;
+  text-decoration: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.google-reviews-link:hover {
+  opacity: 0.7;
+}
+
+.google-g-logo {
+  display: inline-block;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 33px;
+  font-weight: 800;
+  line-height: 1;
+
+  background: conic-gradient(
+    #4285f4 0deg 85deg,
+    #34a853 85deg 165deg,
+    #fbbc05 165deg 215deg,
+    #ea4335 215deg 290deg,
+    #4285f4 290deg 360deg
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.google-reviews-text {
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
 /* LOGOS */
 .logos {
   overflow: hidden;
-  padding: 20px 0;
+  padding: 15px 0;
   background: white;
 }
 
@@ -571,20 +656,55 @@ html {
     height: auto;
   }
 
+
+  /* REVIEWS MOBILE */
+  .reviews-section {
+    padding: 17px 0 3px;
+  }
+
+  .google-rating {
+    gap: 8px;
+    margin: 0 12px 10px;
+  }
+
+  .google-rating-star {
+    font-size: 29px;
+  }
+
+  .google-rating-text {
+    font-size: 19px;
+    letter-spacing: -0.3px;
+  }
+
   .reviews {
-    padding: 20px;
+    padding: 10px 20px 12px;
   }
 
   .review {
     flex: 0 0 85%;
   }
 
+  .google-reviews-link {
+    gap: 7px;
+    margin: 10px auto 4px;
+  }
+
+  .google-g-logo {
+    font-size: 26px;
+  }
+
+  .google-reviews-text {
+    font-size: 15px;
+  }
+
+
+  /* LOGOS MOBILE */
   .logo-set img {
     height: 45px;
   }
 
   .logos {
-    padding: 18px 0;
+    padding: 12px 0;
   }
 
 
